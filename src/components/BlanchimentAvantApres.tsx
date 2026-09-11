@@ -1,7 +1,7 @@
 import { useState, useRef, useCallback, useEffect } from 'react';
 import { ArrowLeftRight } from 'lucide-react';
-import avantAsset from '../assets/blanchiment-avant.png.asset.json';
-import apresAsset from '../assets/blanchiment-apres.png.asset.json';
+import avantImg from '../assets/blanchiment-avant.png';
+import apresImg from '../assets/blanchiment-apres.png';
 
 export default function BlanchimentAvantApres() {
   const [pos, setPos] = useState(50);
@@ -65,7 +65,7 @@ export default function BlanchimentAvantApres() {
       >
         {/* AVANT (full background) */}
         <img
-          src={avantAsset.url}
+          src={avantImg}
           alt="Avant blanchiment dentaire — L'Atelier Lola"
           draggable={false}
           className="absolute inset-0 h-full w-full object-cover pointer-events-none"
@@ -80,7 +80,7 @@ export default function BlanchimentAvantApres() {
           style={{ clipPath: `inset(0 ${100 - pos}% 0 0)` }}
         >
           <img
-            src={apresAsset.url}
+            src={apresImg}
             alt="Après blanchiment dentaire — L'Atelier Lola"
             draggable={false}
             className="absolute inset-0 h-full w-full object-cover"

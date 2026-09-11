@@ -15,7 +15,7 @@ import {
 } from 'lucide-react';
 import { INSTITUT_INFO, LUXURY_IMAGES } from '../data';
 import { Page } from '../types';
-import heroSpaWellnessAsset from '../assets/hero-spa-wellness.png.asset.json';
+import heroSpaWellnessImg from '../assets/hero-spa-wellness.png';
 
 interface HomeViewProps {
   onNavigate: (page: Page) => void;
@@ -160,7 +160,7 @@ export default function HomeView({ onNavigate }: HomeViewProps) {
             initial={{ scale: 1.08 }}
             animate={{ scale: 1.02 }}
             transition={{ duration: 12, ease: "easeOut" }}
-            src={heroSpaWellnessAsset.url}
+            src={heroSpaWellnessImg}
             alt="Ambiance spa zen avec bougies, pierres chaudes et huiles essentielles"
             referrerPolicy="no-referrer"
             className="w-full h-full object-cover filter brightness-110 contrast-95 saturate-95"

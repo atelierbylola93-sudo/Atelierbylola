@@ -1,8 +1,8 @@
 import { ServiceGroup, FaqItem, ReviewItem, Page } from './types';
 import iplEpilationImg from './assets/ipl-epilation.jpg';
-import headspaHeroAsset from './assets/headspa-hero.png.asset.json';
-import blanchimentHeroAsset from './assets/blanchiment-dentaire-hero.png.asset.json';
-import detatouageHeroAsset from './assets/detatouage-hero.png.asset.json';
+import headspaHeroImg from './assets/headspa-hero.png';
+import blanchimentHeroImg from './assets/blanchiment-dentaire-hero.png';
+import detatouageHeroImg from './assets/detatouage-hero.png';
 
 export const INSTITUT_INFO = {
   name: "L'Atelier by Lola",
@@ -43,13 +43,13 @@ export const NAV_ITEMS: MenuItem[] = [
 // Custom Unsplash beauty therapy links for peak aesthetic quality
 export const LUXURY_IMAGES = {
   heroBg: 'https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?auto=format&fit=crop&q=80&w=1600', // Premium Spa bed with cream and gold vibes
-  headSpa: headspaHeroAsset.url, // Japanese Head Spa treatment — uploaded asset
+  headSpa: headspaHeroImg,
   hydraFacial: 'https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&q=80&w=1200', // Luxury glowy skin treatment
   aboutOwner: 'https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&q=80&w=1200', // Wellness specialist representation
   beauteRegard: 'https://images.unsplash.com/photo-1512496015851-a90fb38ba796?auto=format&fit=crop&q=80&w=1200', // Eyelash and brow macro aesthetic
   iplEpilation: iplEpilationImg, // Séance IPL luxe — palette crème/doré
-  blanchimentDentaire: blanchimentHeroAsset.url, // Dazzling white smile — uploaded asset
-  detatouage: detatouageHeroAsset.url, // Dermopigmentation corrective sourcils - uploaded asset
+  blanchimentDentaire: blanchimentHeroImg,
+  detatouage: detatouageHeroImg,
   corpsAlgues: 'https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&q=80&w=1200', // Body treatment luxury mud beauty
 };
 
