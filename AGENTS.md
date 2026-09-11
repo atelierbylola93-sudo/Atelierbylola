@@ -1,4 +1,4 @@
-﻿# Instructions pour agents IA — L'Atelier by Lola
+# Instructions pour agents IA — L'Atelier by Lola
 
 Ce projet est le site officiel de **L'Atelier by Lola**, institut de beauté au Pré-Saint-Gervais (93310).
 
@@ -14,6 +14,6 @@ Ce projet est le site officiel de **L'Atelier by Lola**, institut de beauté au 
 
 - Les routes sont dans `src/routes/` — ne pas modifier `src/routeTree.gen.ts` (auto-généré).
 - Les fonctions serveur utilisent `createServerFn` de `@tanstack/react-start`.
-- L'URL canonique de production est `https://latelierbylola.fr`.
+- L'URL canonique de production est `https://latelier-by-lola.fr`.
 - La couleur principale de la marque est `#B88F4D` (doré).
 - Ne pas exposer `SUPABASE_SERVICE_ROLE_KEY` côté client.

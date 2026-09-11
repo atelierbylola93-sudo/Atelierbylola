@@ -1,5 +1,5 @@
-﻿# robots.txt — L'Atelier by Lola
-# https://latelierbylola.fr
+# robots.txt — L'Atelier by Lola
+# https://latelier-by-lola.fr
 
 User-agent: *
 Allow: /
@@ -26,4 +26,4 @@ Disallow: /login/
 Disallow: /api/
 
 # Plan du site
-Sitemap: https://latelierbylola.fr/sitemap.xml
+Sitemap: https://latelier-by-lola.fr/sitemap.xml

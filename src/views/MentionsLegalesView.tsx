@@ -1,4 +1,4 @@
-﻿import { INSTITUT_INFO } from '../data';
+import { INSTITUT_INFO } from '../data';
 
 export default function MentionsLegalesView() {
   return (
@@ -20,7 +20,7 @@ export default function MentionsLegalesView() {
               Institut de beauté et de coiffure<br />
               {INSTITUT_INFO.address}<br />
               Téléphone : {INSTITUT_INFO.phone}<br />
-              E-mail : contact@latelierbylola.fr
+              E-mail : contact@latelier-by-lola.fr
             </p>
             <p className="text-sm text-secondary-gray">
               SIRET, numéro RCS et forme juridique : à compléter par le gérant.

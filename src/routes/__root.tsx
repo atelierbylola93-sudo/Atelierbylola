@@ -1,4 +1,4 @@
-﻿import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import {
   Outlet,
   Link,
@@ -81,7 +81,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { property: "og:title", content: "L'Atelier by Lola | Head Spa Japonais & Institut de Beauté au Pré-Saint-Gervais" },
       { property: "og:description", content: "Découvrez L'Atelier by Lola au Pré-Saint-Gervais (93). Head Spa japonais, soins du visage signature, Browlift, lissages, blanchiment dentaire et épilation longue durée IPL dans un boudoir luxueux." },
       { property: "og:type", content: "website" },
-      { property: "og:url", content: "https://latelierbylola.fr/" },
+      { property: "og:url", content: "https://latelier-by-lola.fr/" },
       { property: "og:site_name", content: "L'Atelier by Lola" },
       { property: "og:locale", content: "fr_FR" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -95,7 +95,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { rel: "stylesheet", href: appCss },
       { rel: "icon", type: "image/svg+xml", href: "/favicon.svg" },
       { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
-      { rel: "canonical", href: "https://latelierbylola.fr/" },
+      { rel: "canonical", href: "https://latelier-by-lola.fr/" },
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
       { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
       {
