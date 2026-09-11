@@ -1,27 +1,38 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { 
-  Sparkles, 
-  ArrowRight, 
-  CheckCircle, 
-  Calendar, 
-  ChevronDown, 
-  ChevronUp, 
-  Clock, 
-  Compass, 
-  Activity, 
+import { useNavigate } from '@tanstack/react-router';
+import {
+  Sparkles,
+  ArrowRight,
+  CheckCircle,
+  Calendar,
+  ChevronDown,
+  ChevronUp,
+  Clock,
+  Compass,
+  Activity,
   Droplet,
   Phone
 } from 'lucide-react';
 import { INSTITUT_INFO, LUXURY_IMAGES } from '../data';
-import { Page } from '../types';
 import heroSpaWellnessImg from '../assets/hero-spa-wellness.png';
+import type { Page } from '../types';
 
-interface HomeViewProps {
-  onNavigate: (page: Page) => void;
-}
+const PAGE_TO_PATH: Record<string, string> = {
+  'head-spa': '/head-spa',
+  coiffure: '/coiffure',
+  'soins-visage': '/soins-visage',
+  'beaute-regard': '/beaute-regard',
+  ipl: '/ipl',
+  detatouage: '/detatouage',
+  'blanchiment-dentaire': '/blanchiment-dentaire',
+  'soins-corps-algues': '/soins-corps-algues',
+  reservation: '/reservation',
+};
 
-export default function HomeView({ onNavigate }: HomeViewProps) {
+export default function HomeView() {
+  const navigate = useNavigate();
+  const onNavigate = (page: string) => navigate({ to: PAGE_TO_PATH[page] ?? '/' });
   // Head Spa FAQ accordions state
   const [activeFaq, setActiveFaq] = useState<number | null>(null);
 

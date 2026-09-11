@@ -1,4 +1,4 @@
-import { motion } from 'motion/react';
+﻿import { motion } from 'motion/react';
 import { Calendar, CheckCircle2, Star, ShieldCheck, Clock, Leaf, AlertTriangle, Info } from 'lucide-react';
 import { HEAD_SPA_DATA } from '../data';
 import FaqSection from '../components/FaqSection';
@@ -284,7 +284,7 @@ export default function HeadSpaView() {
       <LocalSeoSection
         serviceName="Head Spa Japonais au Pré-Saint-Gervais"
         serviceDescription="Rituel de soin capillaire japonais premium : diagnostic du cuir chevelu, massage crânien thérapeutique et soins purifiants au cœur du Pré-Saint-Gervais, proche Pantin, Les Lilas et Paris 19e."
-        url="https://code-embrace-50.lovable.app/#/head-spa"
+        url="https://latelierbylola.fr/head-spa"
         accent="#B88F4D"
       />
 

@@ -1,4 +1,4 @@
-import { INSTITUT_INFO } from '../data';
+﻿import { INSTITUT_INFO } from '../data';
 
 export default function ConfidentialiteView() {
   return (
@@ -46,7 +46,7 @@ export default function ConfidentialiteView() {
           <section className="space-y-2">
             <h2 className="font-serif text-xl text-charcoal font-medium">Vos droits</h2>
             <p>
-              Conformément au RGPD, vous disposez d'un droit d'accès, de rectification, d'effacement, de limitation et d'opposition sur vos données personnelles. Pour exercer ces droits, contactez-nous à : contact@latelier-by-lola.fr.
+              Conformément au RGPD, vous disposez d'un droit d'accès, de rectification, d'effacement, de limitation et d'opposition sur vos données personnelles. Pour exercer ces droits, contactez-nous à : contact@latelierbylola.fr.
             </p>
           </section>
 

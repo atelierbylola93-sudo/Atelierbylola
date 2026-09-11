@@ -9,14 +9,80 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
+import { Route as SoinsVisageRouteImport } from './routes/soins-visage'
+import { Route as SoinsCorpsAlguesRouteImport } from './routes/soins-corps-algues'
+import { Route as ReservationRouteImport } from './routes/reservation'
+import { Route as MentionsLegalesRouteImport } from './routes/mentions-legales'
 import { Route as LoginRouteImport } from './routes/login'
+import { Route as IplRouteImport } from './routes/ipl'
+import { Route as HeadSpaRouteImport } from './routes/head-spa'
+import { Route as DetatouageRouteImport } from './routes/detatouage'
+import { Route as ConfidentialiteRouteImport } from './routes/confidentialite'
+import { Route as CoiffureRouteImport } from './routes/coiffure'
+import { Route as BlanchimentDentaireRouteImport } from './routes/blanchiment-dentaire'
+import { Route as BeauteRegardRouteImport } from './routes/beaute-regard'
 import { Route as AdminRouteImport } from './routes/admin'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as ApiPublicReservationsRouteImport } from './routes/api/public/reservations'
 
+const SoinsVisageRoute = SoinsVisageRouteImport.update({
+  id: '/soins-visage',
+  path: '/soins-visage',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SoinsCorpsAlguesRoute = SoinsCorpsAlguesRouteImport.update({
+  id: '/soins-corps-algues',
+  path: '/soins-corps-algues',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ReservationRoute = ReservationRouteImport.update({
+  id: '/reservation',
+  path: '/reservation',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const MentionsLegalesRoute = MentionsLegalesRouteImport.update({
+  id: '/mentions-legales',
+  path: '/mentions-legales',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const LoginRoute = LoginRouteImport.update({
   id: '/login',
   path: '/login',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const IplRoute = IplRouteImport.update({
+  id: '/ipl',
+  path: '/ipl',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const HeadSpaRoute = HeadSpaRouteImport.update({
+  id: '/head-spa',
+  path: '/head-spa',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const DetatouageRoute = DetatouageRouteImport.update({
+  id: '/detatouage',
+  path: '/detatouage',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ConfidentialiteRoute = ConfidentialiteRouteImport.update({
+  id: '/confidentialite',
+  path: '/confidentialite',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CoiffureRoute = CoiffureRouteImport.update({
+  id: '/coiffure',
+  path: '/coiffure',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const BlanchimentDentaireRoute = BlanchimentDentaireRouteImport.update({
+  id: '/blanchiment-dentaire',
+  path: '/blanchiment-dentaire',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const BeauteRegardRoute = BeauteRegardRouteImport.update({
+  id: '/beaute-regard',
+  path: '/beaute-regard',
   getParentRoute: () => rootRouteImport,
 } as any)
 const AdminRoute = AdminRouteImport.update({
@@ -38,44 +104,211 @@ const ApiPublicReservationsRoute = ApiPublicReservationsRouteImport.update({
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/admin': typeof AdminRoute
+  '/beaute-regard': typeof BeauteRegardRoute
+  '/blanchiment-dentaire': typeof BlanchimentDentaireRoute
+  '/coiffure': typeof CoiffureRoute
+  '/confidentialite': typeof ConfidentialiteRoute
+  '/detatouage': typeof DetatouageRoute
+  '/head-spa': typeof HeadSpaRoute
+  '/ipl': typeof IplRoute
   '/login': typeof LoginRoute
+  '/mentions-legales': typeof MentionsLegalesRoute
+  '/reservation': typeof ReservationRoute
+  '/soins-corps-algues': typeof SoinsCorpsAlguesRoute
+  '/soins-visage': typeof SoinsVisageRoute
   '/api/public/reservations': typeof ApiPublicReservationsRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/admin': typeof AdminRoute
+  '/beaute-regard': typeof BeauteRegardRoute
+  '/blanchiment-dentaire': typeof BlanchimentDentaireRoute
+  '/coiffure': typeof CoiffureRoute
+  '/confidentialite': typeof ConfidentialiteRoute
+  '/detatouage': typeof DetatouageRoute
+  '/head-spa': typeof HeadSpaRoute
+  '/ipl': typeof IplRoute
   '/login': typeof LoginRoute
+  '/mentions-legales': typeof MentionsLegalesRoute
+  '/reservation': typeof ReservationRoute
+  '/soins-corps-algues': typeof SoinsCorpsAlguesRoute
+  '/soins-visage': typeof SoinsVisageRoute
   '/api/public/reservations': typeof ApiPublicReservationsRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/admin': typeof AdminRoute
+  '/beaute-regard': typeof BeauteRegardRoute
+  '/blanchiment-dentaire': typeof BlanchimentDentaireRoute
+  '/coiffure': typeof CoiffureRoute
+  '/confidentialite': typeof ConfidentialiteRoute
+  '/detatouage': typeof DetatouageRoute
+  '/head-spa': typeof HeadSpaRoute
+  '/ipl': typeof IplRoute
   '/login': typeof LoginRoute
+  '/mentions-legales': typeof MentionsLegalesRoute
+  '/reservation': typeof ReservationRoute
+  '/soins-corps-algues': typeof SoinsCorpsAlguesRoute
+  '/soins-visage': typeof SoinsVisageRoute
   '/api/public/reservations': typeof ApiPublicReservationsRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/admin' | '/login' | '/api/public/reservations'
+  fullPaths:
+    | '/'
+    | '/admin'
+    | '/beaute-regard'
+    | '/blanchiment-dentaire'
+    | '/coiffure'
+    | '/confidentialite'
+    | '/detatouage'
+    | '/head-spa'
+    | '/ipl'
+    | '/login'
+    | '/mentions-legales'
+    | '/reservation'
+    | '/soins-corps-algues'
+    | '/soins-visage'
+    | '/api/public/reservations'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/admin' | '/login' | '/api/public/reservations'
-  id: '__root__' | '/' | '/admin' | '/login' | '/api/public/reservations'
+  to:
+    | '/'
+    | '/admin'
+    | '/beaute-regard'
+    | '/blanchiment-dentaire'
+    | '/coiffure'
+    | '/confidentialite'
+    | '/detatouage'
+    | '/head-spa'
+    | '/ipl'
+    | '/login'
+    | '/mentions-legales'
+    | '/reservation'
+    | '/soins-corps-algues'
+    | '/soins-visage'
+    | '/api/public/reservations'
+  id:
+    | '__root__'
+    | '/'
+    | '/admin'
+    | '/beaute-regard'
+    | '/blanchiment-dentaire'
+    | '/coiffure'
+    | '/confidentialite'
+    | '/detatouage'
+    | '/head-spa'
+    | '/ipl'
+    | '/login'
+    | '/mentions-legales'
+    | '/reservation'
+    | '/soins-corps-algues'
+    | '/soins-visage'
+    | '/api/public/reservations'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   AdminRoute: typeof AdminRoute
+  BeauteRegardRoute: typeof BeauteRegardRoute
+  BlanchimentDentaireRoute: typeof BlanchimentDentaireRoute
+  CoiffureRoute: typeof CoiffureRoute
+  ConfidentialiteRoute: typeof ConfidentialiteRoute
+  DetatouageRoute: typeof DetatouageRoute
+  HeadSpaRoute: typeof HeadSpaRoute
+  IplRoute: typeof IplRoute
   LoginRoute: typeof LoginRoute
+  MentionsLegalesRoute: typeof MentionsLegalesRoute
+  ReservationRoute: typeof ReservationRoute
+  SoinsCorpsAlguesRoute: typeof SoinsCorpsAlguesRoute
+  SoinsVisageRoute: typeof SoinsVisageRoute
   ApiPublicReservationsRoute: typeof ApiPublicReservationsRoute
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
+    '/soins-visage': {
+      id: '/soins-visage'
+      path: '/soins-visage'
+      fullPath: '/soins-visage'
+      preLoaderRoute: typeof SoinsVisageRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/soins-corps-algues': {
+      id: '/soins-corps-algues'
+      path: '/soins-corps-algues'
+      fullPath: '/soins-corps-algues'
+      preLoaderRoute: typeof SoinsCorpsAlguesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/reservation': {
+      id: '/reservation'
+      path: '/reservation'
+      fullPath: '/reservation'
+      preLoaderRoute: typeof ReservationRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/mentions-legales': {
+      id: '/mentions-legales'
+      path: '/mentions-legales'
+      fullPath: '/mentions-legales'
+      preLoaderRoute: typeof MentionsLegalesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/login': {
       id: '/login'
       path: '/login'
       fullPath: '/login'
       preLoaderRoute: typeof LoginRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/ipl': {
+      id: '/ipl'
+      path: '/ipl'
+      fullPath: '/ipl'
+      preLoaderRoute: typeof IplRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/head-spa': {
+      id: '/head-spa'
+      path: '/head-spa'
+      fullPath: '/head-spa'
+      preLoaderRoute: typeof HeadSpaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/detatouage': {
+      id: '/detatouage'
+      path: '/detatouage'
+      fullPath: '/detatouage'
+      preLoaderRoute: typeof DetatouageRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/confidentialite': {
+      id: '/confidentialite'
+      path: '/confidentialite'
+      fullPath: '/confidentialite'
+      preLoaderRoute: typeof ConfidentialiteRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/coiffure': {
+      id: '/coiffure'
+      path: '/coiffure'
+      fullPath: '/coiffure'
+      preLoaderRoute: typeof CoiffureRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/blanchiment-dentaire': {
+      id: '/blanchiment-dentaire'
+      path: '/blanchiment-dentaire'
+      fullPath: '/blanchiment-dentaire'
+      preLoaderRoute: typeof BlanchimentDentaireRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/beaute-regard': {
+      id: '/beaute-regard'
+      path: '/beaute-regard'
+      fullPath: '/beaute-regard'
+      preLoaderRoute: typeof BeauteRegardRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/admin': {
@@ -105,7 +338,18 @@ declare module '@tanstack/react-router' {
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AdminRoute: AdminRoute,
+  BeauteRegardRoute: BeauteRegardRoute,
+  BlanchimentDentaireRoute: BlanchimentDentaireRoute,
+  CoiffureRoute: CoiffureRoute,
+  ConfidentialiteRoute: ConfidentialiteRoute,
+  DetatouageRoute: DetatouageRoute,
+  HeadSpaRoute: HeadSpaRoute,
+  IplRoute: IplRoute,
   LoginRoute: LoginRoute,
+  MentionsLegalesRoute: MentionsLegalesRoute,
+  ReservationRoute: ReservationRoute,
+  SoinsCorpsAlguesRoute: SoinsCorpsAlguesRoute,
+  SoinsVisageRoute: SoinsVisageRoute,
   ApiPublicReservationsRoute: ApiPublicReservationsRoute,
 }
 export const routeTree = rootRouteImport

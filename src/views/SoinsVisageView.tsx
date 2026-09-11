@@ -1,4 +1,4 @@
-import { motion } from 'motion/react';
+﻿import { motion } from 'motion/react';
 import { Calendar, CheckCircle2, Sparkles } from 'lucide-react';
 import { SOINS_VISAGE_DATA, LUXURY_IMAGES } from '../data';
 import FaqSection from '../components/FaqSection';
@@ -159,7 +159,7 @@ export default function SoinsVisageView() {
       <LocalSeoSection
         serviceName="Soins du Visage Signature au Pré-Saint-Gervais"
         serviceDescription="Soins du visage d'exception : soin signature éclat, soin régénérant et protocoles sur mesure pour une peau lumineuse, au Pré-Saint-Gervais, proche Pantin, Les Lilas et Paris 19e."
-        url="https://code-embrace-50.lovable.app/#/soins-visage"
+        url="https://latelierbylola.fr/soins-visage"
         accent="#A3A485"
       />
 

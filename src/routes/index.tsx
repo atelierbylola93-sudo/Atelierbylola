@@ -1,4 +1,4 @@
-import { createFileRoute } from "@tanstack/react-router";
+﻿import { createFileRoute } from "@tanstack/react-router";
 import App from "../App";
 
 export const Route = createFileRoute("/")({
@@ -34,7 +34,7 @@ export const Route = createFileRoute("/")({
         content:
           "https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?auto=format&fit=crop&q=80&w=1200",
       },
-      { property: "og:url", content: "https://latelier-by-lola.fr" },
+      { property: "og:url", content: "https://latelierbylola.fr" },
       { property: "og:site_name", content: "L'Atelier by Lola" },
       { name: "twitter:card", content: "summary_large_image" },
       {

@@ -1,6 +1,29 @@
+﻿# robots.txt — L'Atelier by Lola
+# https://latelierbylola.fr
+
 User-agent: *
 Allow: /
-Disallow: /admin
-Disallow: /login
 
-Sitemap: https://latelier-by-lola.fr/sitemap.xml
+# Zones privées — ne pas indexer
+Disallow: /admin
+Disallow: /admin/
+Disallow: /login
+Disallow: /login/
+Disallow: /api/
+
+# Règles spécifiques Googlebot
+User-agent: Googlebot
+Allow: /
+Disallow: /admin/
+Disallow: /login/
+Disallow: /api/
+
+# Règles spécifiques Bingbot
+User-agent: Bingbot
+Allow: /
+Disallow: /admin/
+Disallow: /login/
+Disallow: /api/
+
+# Plan du site
+Sitemap: https://latelierbylola.fr/sitemap.xml

@@ -1,4 +1,4 @@
-import { INSTITUT_INFO } from '../data';
+﻿import { INSTITUT_INFO } from '../data';
 
 export default function SchemaLocalBusiness() {
   const schema = {
@@ -6,7 +6,7 @@ export default function SchemaLocalBusiness() {
     "@type": "BeautySalon",
     "name": INSTITUT_INFO.name,
     "image": "https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?auto=format&fit=crop&q=80&w=1200",
-    "url": "https://latelier-by-lola.fr",
+    "url": "https://latelierbylola.fr",
     "telephone": INSTITUT_INFO.phone,
     "priceRange": "$$$",
     "address": {

@@ -103,6 +103,7 @@ export const getAvailableSlots = createServerFn({ method: 'GET' })
     ]);
 
     if (hoursRes.error) throw new Error(hoursRes.error.message);
+    if (closedRes.error) throw new Error(closedRes.error.message);
     if (blockedRes.error) throw new Error(blockedRes.error.message);
     if (resvRes.error) throw new Error(resvRes.error.message);
 
