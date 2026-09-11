@@ -3,8 +3,16 @@
   "outputDirectory": "dist/client",
   "installCommand": "npm install",
   "framework": null,
+  "functions": {
+    "api/server.js": {
+      "includeFiles": "dist/server/**"
+    }
+  },
   "rewrites": [
-    { "source": "/(.*)", "destination": "/index.html" }
+    {
+      "source": "/((?!assets/|favicon\\.ico|favicon\\.svg|robots\\.txt|sitemap\\.xml).*)",
+      "destination": "/api/server"
+    }
   ],
   "headers": [
     {
